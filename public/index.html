@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>TodayLine | Capture the little moments that matter</title>
+  <meta name="description"
+    content="TodayLine helps you capture a single highlight from every day so you can build a timeline of memories across every stage of life." />
+  <meta name="theme-color" content="#f7f9ff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#070d1b" media="(prefers-color-scheme: dark)" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://todayline.app" />
+  <meta property="og:title" content="TodayLine — Capture a memory each day" />
+  <meta property="og:description"
+    content="Capture a memory each day and build a gentle timeline of the moments that matter." />
+  <meta property="og:image" content="https://todayline.app/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="600" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TodayLine — Capture a memory each day" />
+  <meta name="twitter:description"
+    content="Capture a memory each day and build a gentle timeline of the moments that matter." />
+  <meta name="twitter:image" content="https://todayline.app/assets/og-image.png" />
+  <link rel="icon" type="image/png" href="/assets/icon-light.png" media="(prefers-color-scheme: light)" />
+  <link rel="icon" type="image/png" href="/assets/icon-dark.png" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" type="image/png" href="/assets/icon-light.png" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+
+<body class="landing-page">
+  <header>
+    <div class="brand">
+      <div class="brand-icon" aria-hidden="true">
+        <picture>
+          <source srcset="/assets/icon-dark.png" media="(prefers-color-scheme: dark)" />
+          <img src="/assets/icon-light.png" alt="" />
+        </picture>
+      </div>
+      <span>TodayLine</span>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="app-icon" aria-hidden="true">
+        <picture>
+          <source srcset="/assets/icon-dark.png" media="(prefers-color-scheme: dark)" />
+          <img src="/assets/icon-light.png" alt="TodayLine app icon" />
+        </picture>
+      </div>
+      <h1>Capture a memory each day</h1>
+      <p>
+        TodayLine gives you a calm space to jot down a highlight from every
+        day. Build your personal timeline, revisit past seasons, and notice
+        how small moments add up over time.
+      </p>
+      <div class="cta">
+        <span>Currently available on iOS.</span>
+        <a class="badge-link" href="https://apps.apple.com/" aria-label="Download TodayLine on the App Store">
+          <img src="/assets/app-store-badge.svg" alt="Download on the App Store" />
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <span>© <span id="year"></span> TodayLine. All rights reserved.</span>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDUTbHFVRDj2MoWFTz6xc4CHkiPJMYD9b0",
+      authDomain: "todayline-app.firebaseapp.com",
+      projectId: "todayline-app",
+      storageBucket: "todayline-app.firebasestorage.app",
+      messagingSenderId: "966435712903",
+      appId: "1:966435712903:web:8bebb5151c47cc8534ed22",
+      measurementId: "G-JZDJV6B0JE"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    getAnalytics(app);
+  </script>
+</body>
+</html>

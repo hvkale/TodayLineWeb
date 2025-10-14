@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>TodayLine Privacy Policy</title>
+    <meta
+      name="description"
+      content="Privacy policy describing how TodayLine handles your information."
+    />
+    <meta name="theme-color" content="#f2f5fb" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#070d1b" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://todayline-app.web.app/privacy-policy.html" />
+    <meta property="og:title" content="TodayLine Privacy Policy" />
+    <meta
+      property="og:description"
+      content="Learn how TodayLine keeps your memories private and stored securely in your personal iCloud account."
+    />
+    <meta property="og:image" content="https://todayline-app.web.app/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TodayLine Privacy Policy" />
+    <meta
+      name="twitter:description"
+      content="Learn how TodayLine keeps your memories private and stored securely in your personal iCloud account."
+    />
+    <meta name="twitter:image" content="https://todayline-app.web.app/assets/og-image.png" />
+    <link rel="icon" type="image/png" href="/assets/icon-light.png" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/png" href="/assets/icon-dark.png" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/png" href="/assets/icon-light.png" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+      </head>
+  <body class="policy-page">
+    <header>
+      <a class="brand" href="/">
+        <div class="brand-icon" aria-hidden="true">
+          <picture>
+            <source srcset="/assets/icon-dark.png" media="(prefers-color-scheme: dark)" />
+            <img src="/assets/icon-light.png" alt="TodayLine home" />
+          </picture>
+        </div>
+        <span>TodayLine</span>
+      </a>
+    </header>
+    <main>
+      <article class="policy-content">
+        <h1>Privacy Policy</h1>
+        <p class="policy-updated">Last updated: September 21, 2025</p>
+        <p>
+          TodayLine (“the App”) respects your privacy. This Privacy Policy explains how your information is handled when you use the App.
+        </p>
+
+        <h2>Data Collection and Use</h2>
+        <ul>
+          <li>The App does <strong>not</strong> collect personal information for its own use, nor does it use any third-party analytics, advertising, or tracking services.</li>
+          <li>All journal entries, photos, videos, and other content you create within the App remain on your device and, if enabled, are stored securely in your personal iCloud account via Apple’s CloudKit.</li>
+        </ul>
+
+        <h2>Data Storage and Syncing</h2>
+        <ul>
+          <li>When iCloud is enabled on your device, your data is synced across your Apple devices using Apple’s CloudKit service.</li>
+          <li>Data stored in iCloud is associated with your Apple ID and managed by Apple in accordance with <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</li>
+          <li>The developer of TodayLine does not have access to your data stored in iCloud.</li>
+        </ul>
+
+        <h2>No Third-Party Access</h2>
+        <ul>
+          <li>The App does not share your data with any third parties.</li>
+          <li>There are no advertising networks or tracking frameworks integrated into the App.</li>
+          <li>The App may use Apple’s MetricKit framework to receive anonymized crash and performance reports. This information is collected and processed by Apple and may be shared with the developer in aggregate form. For details, see <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</li>
+        </ul>
+
+        <h2>Security</h2>
+        <ul>
+          <li>Data stored on your device is protected by the security features of iOS and iCloud.</li>
+          <li>You are responsible for maintaining the security of your Apple ID and device passcode.</li>
+        </ul>
+
+        <h2>Children’s Privacy</h2>
+        <p>
+          TodayLine does not knowingly collect or transmit any personal information from children. Because all data is stored privately in your iCloud account, the App does not access or transmit it to the developer.
+        </p>
+
+        <h2>Changes to This Policy</h2>
+        <p>
+          This Privacy Policy may be updated from time to time. The updated version will be made available with the App or on the App Store listing.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          If you have any questions about this Privacy Policy, you may contact the developer at:
+        </p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:privacy@todayline.app">privacy@todayline.app</a>
+        </p>
+      </article>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <span>© <span id="year"></span> TodayLine. All rights reserved.</span>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDUTbHFVRDj2MoWFTz6xc4CHkiPJMYD9b0",
+      authDomain: "todayline-app.firebaseapp.com",
+      projectId: "todayline-app",
+      storageBucket: "todayline-app.firebasestorage.app",
+      messagingSenderId: "966435712903",
+      appId: "1:966435712903:web:8bebb5151c47cc8534ed22",
+      measurementId: "G-JZDJV6B0JE"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    getAnalytics(app);
+  </script>
+</body>
+</html>
